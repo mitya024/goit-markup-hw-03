@@ -1,0 +1,279 @@
+/* шрифти: Roboto 400 500 700 900, Raleway(лого) 700 */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --main-text-color: #212121;
+  --main-focus-text-blue: #2196f3;
+  --main-white-color: #ffffff;
+  --color-contact: #757575;
+  --color-footer: #2f303a;
+  --color-bg-btn: #f5f4fa;
+}
+
+/* загальне до всіх сторінок застосовується */
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  color: var(--main-text-color);
+}
+/* посилання */
+[href] {
+  text-decoration: none;
+}
+.hdr,
+.benefits,
+.work-examples,
+.work-team,
+.logo,
+.menu-btn,
+.examples {
+  list-style-type: none;
+}
+
+/* лого */
+.logo-footer,
+.logo-header {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 1688px;
+}
+.logo-footer > span {
+  color: var(--main-focus-text-blue);
+}
+.logo-footer {
+  color: var(--main-white-color);
+}
+.logo-header > span {
+  color: var(--main-focus-text-blue);
+}
+.logo-header {
+  color: var(--main-text-color);
+}
+/* вибрана сторінка, постійно підсвічується в меню */
+.hdr .cap-current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-focus-text-blue);
+}
+/* меню */
+.hdr .cap {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: var(--main-text-color);
+  color: inherit;
+}
+.hdr .cap:hover,
+.hdr .cap:focus,
+.hdr .cap:active {
+  color: var(--main-focus-text-blue);
+}
+/* телефон та мейл в header і footer */
+.contact-adress {
+  color: var(--main-white-color);
+  width: 231px;
+  height: 21px;
+  left: 215px;
+  top: 2208px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact-adress:hover,
+.contact-adress:focus {
+  color: var(--main-focus-text-blue);
+}
+
+.hdr .contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-contact);
+}
+.hdr .contact:hover,
+.hdr .contact:focus,
+.hdr .contact:active {
+  color: var(--main-focus-text-blue);
+}
+
+/* головна сторінка */
+.bg-main {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-color: var(--color-footer);
+  color: var(--main-white-color);
+  display: inline-block;
+  text-align: center;
+}
+
+.bg-main .hero-tittle {
+  width: 696px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+}
+/* кнопка на головній */
+.btn-main {
+  background-color: var(--main-focus-text-blue);
+  color: var(--main-white-color);
+  border-color: var(--main-focus-text-blue);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  font-family: inherit;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+.btn-main:focus,
+.btn-main:hover,
+.btn.main:active {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.benefits h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-contact);
+}
+.examples-second h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team h3 {
+  width: 264px;
+  height: 42px;
+  left: 668px;
+  top: 1543px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: #f5f4fa;
+}
+.team h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team p {
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-contact);
+}
+.bg-footer {
+  background-color: var(--color-footer);
+  color: var(--main-white-color);
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+}
+
+/* потфоліо сторінка */
+
+/* кнопки на сторінці портфоліо */
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  border-color: transparent;
+  background: var(--color-bg-btn);
+  color: var(--main-text-color);
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: var(--main-white-color);
+  background-color: var(--main-focus-text-blue);
+  border-radius: 4px;
+  border-color: var(--main-focus-text-blue);
+  font-family: inherit;
+  cursor: pointer;
+}
+.examples h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.examples p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--color-contact);
+}
