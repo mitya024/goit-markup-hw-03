@@ -117,7 +117,6 @@ body {
 
 .bg-main .container {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
 }
 /* вибрана сторінка, постійно підсвічується в меню */
@@ -224,15 +223,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  max-width: 696px;
   text-align: center;
-  margin: 0 auto;
   padding-top: 200px;
 }
 /* кнопка на головній */
 .btn-main {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0px;
   display: block;
   text-align: center;
   background-color: var(--main-focus-text-blue);
@@ -276,8 +272,8 @@ body {
 }
 
 .examples-second {
-  width: 1600px;
   margin: 0 auto;
+  width: 1600px;
   padding-bottom: 94px;
 }
 
@@ -397,4 +393,5 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--main-white-color);
+  border-radius: 0px 0px 4px 4px;
 }
