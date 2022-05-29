@@ -371,10 +371,12 @@ body {
 }
 .menu-btn {
   display: flex;
+  justify-content: center;
 }
 .examples {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .examples h4 {
   font-weight: 700;
