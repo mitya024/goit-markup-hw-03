@@ -273,14 +273,12 @@ body {
   padding-bottom: 10px;
 }
 
-.examples-second {
-  width: 1600px;
-  margin: 0 auto;
+.section .container {
   padding-bottom: 94px;
   text-align: center;
 }
 
-.examples-second h2 {
+.container h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
