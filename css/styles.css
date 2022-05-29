@@ -273,11 +273,25 @@ body {
   padding-bottom: 10px;
 }
 
-.section .container {
+.examples-section {
+  width: 1600px;
+  margin: 0 auto;
   padding-bottom: 94px;
   text-align: center;
 }
-
+.benefits-example {
+  width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.team {
+  width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
 .examples-section h2 {
   font-weight: 700;
   font-size: 36px;
@@ -309,14 +323,6 @@ body {
   padding-left: 215px;
 }
 
-.team {
-  width: 1600px;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #f5f4fa;
-}
 .team h4 {
   font-weight: 500;
   font-size: 16px;
@@ -378,7 +384,7 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  max-width: 1600px;
+  width: 1600px;
   margin: 0 auto;
 }
 
