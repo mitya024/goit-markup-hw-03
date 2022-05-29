@@ -58,12 +58,15 @@ body {
 /* лого */
 .logo-footer,
 .logo-header {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-footer > span {
   color: var(--main-focus-text-blue);
@@ -72,8 +75,8 @@ body {
   color: var(--main-white-color);
 }
 .logo-footer {
-  margin-top: 60px;
-  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .logo-header > span {
   color: var(--main-focus-text-blue);
@@ -88,6 +91,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-focus-text-blue);
+}
+.hdr {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* меню */
 .hdr .cap {
