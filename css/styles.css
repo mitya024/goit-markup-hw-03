@@ -268,7 +268,6 @@ body {
 }
 .benefits {
   display: flex;
-
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -277,6 +276,8 @@ body {
 }
 
 .examples-second {
+  width: 1600px;
+  margin: 0 auto;
   padding-bottom: 94px;
 }
 
@@ -291,6 +292,9 @@ body {
 .work-examples {
   display: flex;
   margin-top: 50px;
+  justify-content: center;
+  padding-right: 215px;
+  padding-left: 215px;
 }
 
 .team h3 {
@@ -304,9 +308,12 @@ body {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  padding-right: 215px;
+  padding-left: 215px;
 }
 
 .team {
+  width: 1600px;
   margin: 0 auto;
   text-align: center;
   padding-top: 94px;
@@ -389,4 +396,5 @@ body {
 .work-team-discraption {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--main-white-color);
 }
