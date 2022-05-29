@@ -369,6 +369,13 @@ body {
   font-family: inherit;
   cursor: pointer;
 }
+.menu-btn {
+  display: flex;
+}
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
 .examples h4 {
   font-weight: 700;
   font-size: 18px;
