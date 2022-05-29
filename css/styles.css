@@ -50,6 +50,7 @@ body {
 }
 .hdr,
 .hdr-header,
+.hdr-contact,
 .benefits,
 .work-examples,
 .work-team,
@@ -88,14 +89,36 @@ body {
 }
 .logo-header {
   color: var(--main-text-color);
-}
-.logo-header {
   padding-bottom: 25px;
   padding-top: 24px;
+  margin-right: 93px;
 }
+
 .hdr-header {
+  display: flex;
   padding-bottom: 32px;
 }
+.hdr-header:not(:last-child) {
+  margin-right: 50px;
+}
+.hdr-contact {
+  padding-bottom: 32px;
+  margin-left: 331px;
+}
+
+.header .container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hdr-contact {
+  display: flex;
+}
+
+.bg-main .container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
 }
 /* вибрана сторінка, постійно підсвічується в меню */
 .hdr .cap-current {
@@ -158,7 +181,7 @@ body {
   color: var(--main-focus-text-blue);
 }
 
-.hdr-header .contact {
+.hdr-contact .contact {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -166,9 +189,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-contact);
 }
-.hdr-header .contact:hover,
-.hdr-header .contact:focus,
-.hdr-header .contact:active {
+.hdr-contact .contact:hover,
+.hdr-contact .contact:focus,
+.hdr-contact .contact:active {
   color: var(--main-focus-text-blue);
 }
 
@@ -189,7 +212,7 @@ body {
 .bg-main {
   background-color: var(--color-footer);
   color: var(--main-white-color);
-  max-width: 1600px;
+  width: 1600px;
   height: 600px;
   margin: 0 auto;
 }
@@ -230,7 +253,6 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
-
 .benefits h4 {
   font-weight: 700;
   font-size: 14px;
@@ -245,6 +267,8 @@ body {
   color: var(--color-contact);
 }
 .benefits {
+  display: flex;
+
   padding-top: 94px;
   padding-bottom: 47px;
 }
@@ -255,6 +279,7 @@ body {
 .examples-second {
   padding-bottom: 94px;
 }
+
 .examples-second h2 {
   font-weight: 700;
   font-size: 36px;
@@ -262,9 +287,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 47px;
-  
 }
 .work-examples {
+  display: flex;
   margin-top: 50px;
 }
 
@@ -276,10 +301,14 @@ body {
   letter-spacing: 0.03em;
 }
 .work-team {
+  display: flex;
   margin-top: 50px;
-  background-color: var(--main-white-color);
+  justify-content: center;
 }
+
 .team {
+  margin: 0 auto;
+  text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -347,8 +376,6 @@ body {
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
   margin: 0 auto;
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 
 .container {
@@ -357,4 +384,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid red;
+}
+
+.work-team-discraption {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
