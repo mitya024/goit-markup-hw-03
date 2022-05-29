@@ -11,14 +11,7 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 :root {
   --main-text-color: #212121;
   --main-focus-text-blue: #2196f3;
@@ -27,7 +20,21 @@ html {
   --color-footer: #2f303a;
   --color-bg-btn: #f5f4fa;
 }
-
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
 /* загальне до всіх сторінок застосовується */
 body {
   font-family: "Roboto", sans-serif;
@@ -57,16 +64,16 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 1688px;
 }
 .logo-footer > span {
   color: var(--main-focus-text-blue);
 }
 .logo-footer {
   color: var(--main-white-color);
+}
+.logo-footer {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .logo-header > span {
   color: var(--main-focus-text-blue);
@@ -99,10 +106,6 @@ body {
 /* телефон та мейл в header і footer */
 .contact-adress {
   color: var(--main-white-color);
-  width: 231px;
-  height: 21px;
-  left: 215px;
-  top: 2208px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -114,6 +117,10 @@ body {
 .contact-adress:hover,
 .contact-adress:focus {
   color: var(--main-focus-text-blue);
+}
+
+.contact,
+.contact-adress {
 }
 
 .hdr .contact {
@@ -129,32 +136,25 @@ body {
 .hdr .contact:active {
   color: var(--main-focus-text-blue);
 }
-
 /* головна сторінка */
 .bg-main {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--color-footer);
   color: var(--main-white-color);
-  display: inline-block;
-  text-align: center;
+  max-width: 1600px;
 }
 
-.bg-main .hero-tittle {
-  width: 696px;
-  height: 120px;
+.hero-tittle {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
 }
 /* кнопка на головній */
 .btn-main {
+  display: block;
+  text-align: center;
   background-color: var(--main-focus-text-blue);
   color: var(--main-white-color);
   border-color: var(--main-focus-text-blue);
@@ -165,12 +165,7 @@ body {
 
   font-family: inherit;
   width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
 }
 .btn-main:focus,
 .btn-main:hover,
@@ -192,24 +187,39 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-contact);
 }
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+.benefits-tittle {
+  padding-bottom: 10px;
+}
+.work-examples {
+  padding-top: 25px;
+  padding-bottom: 94px;
+}
 .examples-second h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 47px;
+  padding-bottom: 25px;
 }
 
 .team h3 {
   width: 264px;
-  height: 42px;
-  left: 668px;
-  top: 1543px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.work-team {
+  padding-bottom: 94px;
 }
 .team {
   background-color: #f5f4fa;
@@ -233,8 +243,7 @@ body {
   color: var(--main-white-color);
   width: 1600px;
   height: 252px;
-  left: 0px;
-  top: 2097px;
+  margin: 0 auto;
 }
 
 /* потфоліо сторінка */
@@ -244,7 +253,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
   font-family: inherit;
   border-color: transparent;
@@ -253,7 +261,6 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
-  text-align: center;
 }
 .btn:hover,
 .btn:focus,
@@ -276,4 +283,20 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color-contact);
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin: 0 auto;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
