@@ -35,6 +35,9 @@ ol {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 /* загальне до всіх сторінок застосовується */
 body {
   font-family: "Roboto", sans-serif;
@@ -46,6 +49,7 @@ body {
   text-decoration: none;
 }
 .hdr,
+.hdr-header,
 .benefits,
 .work-examples,
 .work-team,
@@ -76,13 +80,22 @@ body {
 }
 .logo-footer {
   padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
 }
 .logo-header > span {
   color: var(--main-focus-text-blue);
 }
 .logo-header {
   color: var(--main-text-color);
+}
+.logo-header {
+  padding-bottom: 25px;
+  padding-top: 24px;
+}
+.hdr-header {
+  padding-bottom: 32px;
+}
 }
 /* вибрана сторінка, постійно підсвічується в меню */
 .hdr .cap-current {
@@ -92,9 +105,28 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-focus-text-blue);
 }
+.hdr-header .cap-current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-focus-text-blue);
+}
+.hdr-header .cap {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: var(--main-text-color);
+  color: inherit;
+}
+.hdr-header .cap:hover,
+.hdr-header .cap:focus,
+.hdr-header .cap:active {
+  color: var(--main-focus-text-blue);
+}
 .hdr {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 60px;
 }
 /* меню */
 .hdr .cap {
@@ -126,8 +158,18 @@ body {
   color: var(--main-focus-text-blue);
 }
 
-.contact,
-.contact-adress {
+.hdr-header .contact {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--color-contact);
+}
+.hdr-header .contact:hover,
+.hdr-header .contact:focus,
+.hdr-header .contact:active {
+  color: var(--main-focus-text-blue);
 }
 
 .hdr .contact {
@@ -148,6 +190,8 @@ body {
   background-color: var(--color-footer);
   color: var(--main-white-color);
   max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-tittle {
@@ -157,9 +201,15 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+  max-width: 696px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 200px;
 }
 /* кнопка на головній */
 .btn-main {
+  margin: 0 auto;
+  margin-top: 30px;
   display: block;
   text-align: center;
   background-color: var(--main-focus-text-blue);
@@ -169,9 +219,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  font-family: inherit;
   width: 200px;
+  height: 50px;
+  font-family: inherit;
   border-radius: 4px;
 }
 .btn-main:focus,
@@ -201,8 +251,8 @@ body {
 .benefits-tittle {
   padding-bottom: 10px;
 }
-.work-examples {
-  padding-top: 25px;
+
+.examples-second {
   padding-bottom: 94px;
 }
 .examples-second h2 {
@@ -212,36 +262,37 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-top: 47px;
-  padding-bottom: 25px;
+  
+}
+.work-examples {
+  margin-top: 50px;
 }
 
 .team h3 {
-  width: 264px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 .work-team {
-  padding-bottom: 94px;
+  margin-top: 50px;
+  background-color: var(--main-white-color);
 }
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .team p {
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-contact);
 }
