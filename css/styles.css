@@ -96,23 +96,37 @@ body {
 
 .hdr-header {
   display: flex;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
-.hdr-header:not(:last-child) {
+.hdr-header li:not(:last-child) {
+  margin-right: 50px;
+}
+.hdr-contact li:not(:last-child) {
   margin-right: 50px;
 }
 .hdr-contact {
-  padding-bottom: 32px;
+  display: flex;
   margin-left: 331px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.cap {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
+.cap-current {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.hdr-contact .contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .header .container {
   display: flex;
   align-items: flex-end;
-}
-
-.hdr-contact {
-  display: flex;
 }
 
 .bg-main .container {
@@ -212,9 +226,8 @@ body {
 .bg-main {
   background-color: var(--color-footer);
   color: var(--main-white-color);
-  width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-tittle {
@@ -226,7 +239,6 @@ body {
   text-transform: uppercase;
   color: var(--main-white-color);
   text-align: center;
-  padding-top: 200px;
 }
 /* кнопка на головній */
 .btn-main {
@@ -257,35 +269,35 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 270px;
+  height: 16px;
 }
 .benefits p {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-contact);
+  width: 270px;
+  height: 75px;
 }
 .benefits {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 47px;
+}
+.benefits li:not(:last-child) {
+  margin-right: 30px;
 }
 .benefits-tittle {
   padding-bottom: 10px;
 }
-
-.examples-section {
-  width: 1600px;
-  margin: 0 auto;
-  padding-bottom: 94px;
-  text-align: center;
-}
 .benefits-example {
-  width: 1600px;
-  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+.examples-section {
+  padding-bottom: 94px;
+}
+
 .team {
-  width: 1600px;
-  margin: 0 auto;
   text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -297,16 +309,14 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 47px;
 }
 .work-examples {
   display: flex;
   margin-top: 50px;
-  justify-content: center;
-  padding-right: 215px;
-  padding-left: 215px;
 }
-
+.work-examples li:not(:last-child) {
+  margin-right: 30px;
+}
 .team h3 {
   text-align: center;
   font-weight: 700;
@@ -317,9 +327,9 @@ body {
 .work-team {
   display: flex;
   margin-top: 50px;
-  justify-content: center;
-  padding-right: 215px;
-  padding-left: 215px;
+}
+.work-team li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team h4 {
@@ -337,9 +347,6 @@ body {
 .bg-footer {
   background-color: var(--color-footer);
   color: var(--main-white-color);
-  width: 1600px;
-  height: 252px;
-  margin: 0 auto;
 }
 
 /* потфоліо сторінка */
@@ -392,8 +399,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .container {
@@ -409,4 +414,8 @@ body {
   padding-bottom: 30px;
   background-color: var(--main-white-color);
   border-radius: 0px 0px 4px 4px;
+}
+
+.bg-footer .hdr li:not(:last-child) {
+  margin-bottom: 9px;
 }
