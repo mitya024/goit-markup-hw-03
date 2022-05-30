@@ -364,6 +364,9 @@ body {
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+  width: auto;
+  height: 38px;
+  text-align: center;
 }
 .btn:hover,
 .btn:focus,
@@ -378,12 +381,22 @@ body {
 .menu-btn {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.menu-btn li:not(:last-child) {
+  margin-right: 8px;
 }
 .examples {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 94px;
 }
+.examples li:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
 .examples h4 {
   font-weight: 700;
   font-size: 18px;
