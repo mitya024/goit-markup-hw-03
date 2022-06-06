@@ -63,16 +63,6 @@ body {
 /* ----------------------------------------------------------- */
 
 /* лого */
-.logo-footer {
-  display: block;
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-}
 
 .logo-header {
   display: block;
@@ -229,7 +219,6 @@ body {
   background-color: var(--color-footer);
   color: var(--main-white-color);
 }
-
 .hero-tittle {
   width: 696px;
   font-weight: 900;
@@ -248,7 +237,6 @@ body {
   background-color: var(--main-focus-text-blue);
   color: var(--main-white-color);
   border-color: var(--main-focus-text-blue);
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -261,7 +249,6 @@ body {
 .btn-main:hover,
 .btn.main:active {
   opacity: 0.5;
-  cursor: pointer;
 }
 .benefits h4 {
   font-weight: 700;
@@ -360,6 +347,17 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-contact);
 }
+.logo-footer {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
 .bg-footer {
   background-color: var(--color-footer);
   color: var(--main-white-color);
@@ -379,7 +377,6 @@ body {
   border-color: transparent;
   background: var(--color-bg-btn);
   color: var(--main-text-color);
-  cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
   width: auto;
@@ -392,7 +389,6 @@ body {
   background-color: var(--main-focus-text-blue);
   border-radius: 4px;
   font-family: inherit;
-  cursor: pointer;
 }
 .menu-btn {
   display: flex;
